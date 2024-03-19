@@ -33,7 +33,7 @@ body{
 }
 
 /* (page-base) 레이아웃 */
-.header, .visual, .main , .slogan, .footer-inner{
+.header, .visual, .slogan, .footer-inner{
   /* background-color: yellow; */
   width : var(--container-size);
   /* inline-size: 940px; */
@@ -54,28 +54,41 @@ body{
 /* 메인콘텐츠 */
 .main{
   background-color: salmon;
-  font-size: 0;
+  width : var(--container-size);
+  margin: 0 auto;
+  /* flex container */
+  display: flex;
+  /* flex-direction: column-reverse; */
+  flex-flow: row wrap;
+  /* justify-content: space-between; division 사이 간격만 동일 120을 0/60/60/0*/
+  /* justify-content:  space-around; 전체 120에서 사이간격(40+40) + 앞뒤간격(40)을 더한후 앞뒤만 다시 나눔  20/40/40/20*/
+  justify-content: space-evenly; /*전체120를 전체 나눔 30/30/30/30 */
 }
 
 .group{
   /* display: inline; */
-  display : inline-block;
-  font-size: 16px;
+  /* display : inline-block;
+  font-size: 16px; */
+  
+  /* flex item */
+  display: block;
+  flex-shrink: 0;
 }
 
 .group1{
   background-color: lime;
-  width : 250px
+  width : 250px;
 }
 
 .group2{
   background-color: skyblue;
-  width : 380px
+  width : 380px;
+  /* order : -1; */
 }
 
 .group3{
   background-color: violet;
-  width : 190px
+  width : 190px;
 }
 /* 푸터 */
 .footer{
