@@ -1,0 +1,83 @@
+@import url(./reset.css);
+:root{
+  --primary-color: #fff;
+  --secondary-color: #fff;
+  --accent-color: #fff;
+  
+  --white: #fff;
+  --black: #000;
+
+  --container-size: 940px;
+  --spacing-lg: 30px;
+  --spacing-base: 20px;
+  --spacing-sma: 10px;
+}
+
+
+body{
+  --text-color: var(--black);
+  --bg-color: var(--white);
+
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    --text-color: var(--white);
+    --bg-color: var(--black);
+  }
+}
+
+/* (page-base) 레이아웃 */
+.header, .visual, .main , .slogan, .footer-inner{
+  /* background-color: yellow; */
+  width : var(--container-size);
+  /* inline-size: 940px; */
+  /* height: 200px; */
+  /* block-size: 200px; */
+  /* color : blue; */
+  /* border: 10px solid currentColor; */
+  padding: 0 var(--spacing-lg);
+  margin: 0 auto;
+
+  /* padding-block-start: 0; */
+  /* scroll-padding-block-end: 0; */
+  /* padding-inline-start: 30px; */
+  /* padding-inline-end: 0; */
+}
+
+
+/* 메인콘텐츠 */
+.main{
+  background-color: salmon;
+  font-size: 0;
+}
+
+.group{
+  /* display: inline; */
+  display : inline-block;
+  font-size: 16px;
+}
+
+.group1{
+  background-color: lime;
+  width : 250px
+}
+
+.group2{
+  background-color: skyblue;
+  width : 380px
+}
+
+.group3{
+  background-color: violet;
+  width : 190px
+}
+/* 푸터 */
+.footer{
+  /* background-color: grey; */
+}
