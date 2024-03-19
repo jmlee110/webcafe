@@ -56,23 +56,14 @@ body{
   background-color: salmon;
   width : var(--container-size);
   margin: 0 auto;
-  /* flex container */
-  display: flex;
-  /* flex-direction: column-reverse; */
-  flex-flow: row wrap;
-  /* justify-content: space-between; division 사이 간격만 동일 120을 0/60/60/0*/
-  /* justify-content:  space-around; 전체 120에서 사이간격(40+40) + 앞뒤간격(40)을 더한후 앞뒤만 다시 나눔  20/40/40/20*/
-  justify-content: space-evenly; /*전체120를 전체 나눔 30/30/30/30 */
+  /* overflow: hidden; */
+  display: flow-root;
+  padding: 0 15px;
 }
 
 .group{
-  /* display: inline; */
-  /* display : inline-block;
-  font-size: 16px; */
-  
-  /* flex item */
-  display: block;
-  flex-shrink: 0;
+  float: left;
+  margin: 0 15px;
 }
 
 .group1{
@@ -83,13 +74,18 @@ body{
 .group2{
   background-color: skyblue;
   width : 380px;
-  /* order : -1; */
 }
 
 .group3{
   background-color: violet;
   width : 190px;
 }
+
+/* 슬로건 */
+.slogan{
+  /* clear: both; */
+}
+
 /* 푸터 */
 .footer{
   /* background-color: grey; */
