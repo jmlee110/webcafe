@@ -569,48 +569,6 @@ fieldset{
 
 /* 공지사항 및 자료실 */
 /* .board{
-  background-color: yellow;
-
-  .notice{
-    background-color: pink;
-    .notice-list{
-      background-color: blue;
-      line-height: 1.5;
-      display: flex;
-      flex-flow: column nowrap;
-    }
-    li{
-
-    }
-
-  }
-
-  .archive{
-    background-color: skyblue;
-
-  }
-
-  button{
-    border: 0;
-    margin-bottom: 10px;
-  }
-
-  ul{
-
-    li{
-
-      a{
-
-      }
-      time{
-        
-      }
-
-    }
-    
-  }
-} */
-.board{
   background: yellow;
   position: relative;
 
@@ -664,7 +622,111 @@ fieldset{
     top: 0;
     right: 0;
   }
+} */
+
+.board{
+  background: yellow;
+  display: grid;
+  grid-template-columns: 80px 80px 1fr;
+  margin-bottom: 20px;
+
+  .notice-tab{
+    grid-area: 1/1/2/2;
+  }
+
+  .acrhive-tab{
+    grid-area: 1/2/2/3;
+  }
+
+  .notice-list{
+    grid-area: 2/1/3/4;
+  }
+
+  .notice-more{
+    grid-area: 1/3/2/4;
+    justify-self: end;
+  }
+
+  .archive-list, .archive-more{
+    display: none;
+  }
+
 }
+
+/* 새소식 */
+/* .news{
+  background-color: pink;
+  
+  .news-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ed552f;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray300);
+  }
+
+  .news-link{
+    background-color: skyblue;
+
+    .news-item-title{
+      float: right;
+    }
+
+    .news-item-date{
+      float: right;
+    }
+    
+    .news-item-thumbnail{
+      float: left;
+    }
+
+    .news-item-brief{
+      float: right;
+    }
+    
+    .news-item{
+    }
+  }
+} */
+
+.news{
+  background-color: pink;
+  position: relative;
+
+  .news-title{
+    color: var(--orange200);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .news-link{
+    display: block;
+
+    .news-item{
+      position: relative;
+      padding-left: 130px;
+      margin-top: 35px;
+      background-color: skyblue;
+
+      .news-item-thumbnail{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+  }
+
+  .news-more{
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }  
+
+}
+
 
 /* 슬로건 */
 .slogan{
