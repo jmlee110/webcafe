@@ -760,6 +760,117 @@ fieldset{
   }
 }
 
+/* 신규 이벤트 맟 관련 사이트 */
+
+/* .gradient-effect{
+  background: linear-gradient(to bottom, var(--gray200), var(--gray100));
+  border-radius: 15px 15px 0 0;
+  border: 1px solid var(--gray200);
+  position: relative;
+
+  .event-title{
+    background-color: yellow;
+    margin-bottom: 20px;
+    height: 18px;
+    font-weight: 500;
+  }
+
+  .event-button-wrapper{
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .event-button-prev, .event-button-next{
+      box-sizing: border-box;
+      border: 1px solid var(--gray300);
+      width: 20px;
+      height: 18px;
+      background: url(./../assets/bg/back_forward.png);
+      padding-top: 18px;
+      overflow: hidden;
+    }
+    
+    .event-button-next{
+      background-position: -37px 0;
+    }
+    
+  } 
+
+  
+  div{
+    .event-thumbnail{
+      background-color: lime;
+      width: 100%;
+    }
+
+    .event-brief{
+      line-height: 1.5;
+    }
+  }
+
+}*/
+
+.gradient-effect{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+
+  [class*="-title"]{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .accent-color{
+    color: var(--orange200);
+  }
+}
+
+.event{
+  margin: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.event-button-wrapper{
+  --spacing: 4px;
+  --size: 20px;
+
+  padding: 4px;
+  height: calc(var(--size) + (var(--spacing) * 2));
+  overflow: hidden;
+
+  button{
+    width: var(--size);
+    height: var(--size);
+    padding: var(--size) 0 0 0;
+    border: 0;
+    background: url(./../assets/bg/back_forward.png) no-repeat;
+    overflow: hidden;
+  }
+
+  .event-button-next{
+    background-position: 100% 0;
+  }
+}
+
+#eventDetail{
+  width: 100%;
+
+img{
+  box-shadow: 5px 5px 0 0 #aaa;
+  margin-bottom: 10px;
+  }
+em{
+    font-style: normal;
+  }
+}
+
+.related{
+  margin: 10px;
+}
+
 
 /* 슬로건 */
 .slogan{
